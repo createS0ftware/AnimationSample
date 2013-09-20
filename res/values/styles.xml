@@ -32,4 +32,13 @@
         <item name="android:layout_height">36dp</item>
         <item name="android:background">@color/temp_degrees_number_background</item>
     </style>
+    
+        <style name="temp_degrees_separator">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:text">.</item>
+    </style>
 </resources>

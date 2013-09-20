@@ -9,19 +9,19 @@
     android:weightSum="1"
     tools:context=".BathTempControlActivity" >
 
-    <com.ht.akqatest.controls.TemperatureGauge
+    <com.ht.bathanimationsample.controls.TemperatureGauge
         android:id="@+id/tempGauge"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="0.5" >
-    </com.ht.akqatest.controls.TemperatureGauge>
+    </com.ht.bathanimationsample.controls.TemperatureGauge>
 
-    <com.ht.akqatest.controls.WaterMonitor
+    <com.ht.bathanimationsample.controls.WaterMonitor
         android:id="@+id/waterMonitor1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="0.25" >
-    </com.ht.akqatest.controls.WaterMonitor>
+    </com.ht.bathanimationsample.controls.WaterMonitor>
 
     <LinearLayout
         android:layout_width="match_parent"

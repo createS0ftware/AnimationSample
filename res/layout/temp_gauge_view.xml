@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.7"
+            android:layout_weight="0.72"
             android:gravity="bottom|center_horizontal"
             android:orientation="vertical" >
 
@@ -47,7 +47,10 @@
                     android:layout_below="@+id/img_dial"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
                     android:layout_weight="0.9"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
                     android:src="@drawable/dial_hand" />
 
             </RelativeLayout>
@@ -58,7 +61,7 @@
             android:id="@+id/bottom_half_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
+            android:layout_weight="0.28"
             android:gravity="center_vertical|center_horizontal"
             android:orientation="vertical" >
 
@@ -74,22 +77,10 @@
                     <TableRow
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" >
-
-                        <FrameLayout style="@style/temp_degrees_number_layout" >
-
-                            <TextView
-                                android:id="@+id/temp_hundreds_lower_text_view"
-                                style="@style/temp_degrees_number_text_view"
-                                android:text="0" />
-
-                            <TextView
-                                android:id="@+id/temp_hundreds_upper_text_view"
-                                style="@style/temp_degrees_number_text_view" />
-                        </FrameLayout>
-
+                        
                         <FrameLayout
                             style="@style/temp_degrees_number_layout"
-                            android:layout_marginLeft="5dp" >
+                            >
 
                             <TextView
                                 android:id="@+id/temp_tens_lower_text_view"
@@ -114,6 +105,21 @@
                                 android:id="@+id/temp_units_upper_text_view"
                                 style="@style/temp_degrees_number_text_view" />
                         </FrameLayout>
+
+                       <TextView
+                           style="@style/temp_degrees_separator"/>
+
+                        <FrameLayout style="@style/temp_degrees_number_layout" > 
+                            <TextView
+                                android:id="@+id/temp_hundreds_lower_text_view"
+                                style="@style/temp_degrees_number_text_view"
+                                android:text="0" />
+
+                            <TextView
+                                android:id="@+id/temp_hundreds_upper_text_view"
+                                style="@style/temp_degrees_number_text_view" />
+                        </FrameLayout>
+                        
                     </TableRow>
                 </TableLayout>
             </LinearLayout>
@@ -121,6 +127,6 @@
 
     </LinearLayout>
 
->
+
 
 </RelativeLayout>
