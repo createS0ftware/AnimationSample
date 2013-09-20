@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/img_water"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/img_monitor"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        android:src="@drawable/water_level" />
+
+    <ImageView
+        android:id="@+id/img_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/monitor_tub" />
+
+</RelativeLayout>

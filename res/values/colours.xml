@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="temp_degrees_background">#3e668a</color>
+    <color name="temp_degrees_number_background">#000000</color>
+    <color name="temp_degrees_number_text">#ddeff3</color>
+    
+    
+</resources>
